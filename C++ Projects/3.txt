@@ -1,0 +1,43 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+
+
+int main()
+{
+   int x;
+   int y;
+   cout<<"Enter Two Numbers: "<<endl;
+   cin>>x;
+   cin>>y;
+   try
+   {
+     
+        if(y==0)
+        throw "division by error ";
+        else if(y<0)
+        throw "negative not accepted";
+        else if(y>x)
+        throw "not greater";
+        cout<<x/y;
+   }
+   catch(const char *e)
+    {
+        cerr<<e<<endl;
+    }
+    //cout<<" after catch run the program";
+
+    return 0;
+}
+
+alternate program in copy
