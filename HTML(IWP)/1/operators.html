@@ -1,0 +1,213 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+      <button onclick="clearResult()">C</button>
+      <button onclick="deleteCharacter()">&larr;</button>
+      <button onclick="appendCharacter('/')">/</button>
+      <button onclick="appendCharacter('7')">7</button>
+      <button onclick="appendCharacter('8')">8</button>
+      <button onclick="appendCharacter('9')">9</button>
+      <button onclick="appendCharacter('*')">*</button>
+      <button onclick="appendCharacter('4')">4</button>
+      <button onclick="appendCharacter('5')">5</button>
+      <button onclick="appendCharacter('6')">6</button>
+      <button onclick="appendCharacter('-')">-</button>
+      <button onclick="appendCharacter('1')">1</button>
+      <button onclick="appendCharacter('2')">2</button>
+      <button onclick="appendCharacter('3')">3</button>
+      <button onclick="appendCharacter('+')">+</button>
+      <button onclick="appendCharacter('0')">0</button>
+      <button onclick="appendCharacter('.')">.</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </div>
+  
+  <script>
+    function clearResult() {
+      document.getElementById("result").value = "";
+    }
+
+    function deleteCharacter() {
+      var result = document.getElementById("result").value;
+      document.getElementById("result").value = result.slice(0, -1);
+    }
+
+    function appendCharacter(character) {
+      document.getElementById("result").value += character;
+    }
+
+    function calculateResult() {
+      var result = document.getElementById("result").value;
+      var calculatedResult = eval(result);
+      document.getElementById("result").value = calculatedResult;
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2acccc;}
+    
+
+    
+    .calculator {
+      width: 200px;
+      margin: 50px auto;
+      padding: 80px;
+      border: 1px solid #141313;
+      text-align: center;
+    }
+
+    .calculator input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    .calculator button {
+      width: 50px;
+      height: 30px;
+      margin: 2px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2px;
+    }
+  </style>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+      <button class="operator" onclick="clearResult()">C</button>
+      <button class="operator" onclick="deleteCharacter()">&larr;</button>
+      <button class="operator" onclick="appendCharacter('/')">/</button>
+      <button onclick="appendCharacter('7')">7</button>
+      <button onclick="appendCharacter('8')">8</button>
+      <button onclick="appendCharacter('9')">9</button>
+      <button class="operator" onclick="appendCharacter('*')">*</button>
+      <button onclick="appendCharacter('4')">4</button>
+      <button onclick="appendCharacter('5')">5</button>
+      <button onclick="appendCharacter('6')">6</button>
+      <button class="operator" onclick="appendCharacter('-')">-</button>
+      <button onclick="appendCharacter('1')">1</button>
+      <button onclick="appendCharacter('2')">2</button>
+      <button onclick="appendCharacter('3')">3</button>
+      <button class="operator" onclick="appendCharacter('+')">+</button>
+      <button id="zero" onclick="appendCharacter('0')">0</button>
+      <button onclick="appendCharacter('.')">.</button>
+      <button id="equals" onclick="calculateResult()">=</button>
+    </div>
+  </div>
+  
+  <script>
+    function clearResult() {
+      document.getElementById("result").value = "";
+    }
+
+    function deleteCharacter() {
+      var result = document.getElementById("result").value;
+      document.getElementById("result").value = result.slice(0, -1);
+    }
+
+    function appendCharacter(character) {
+      document.getElementById("result").value += character;
+    }
+
+    function calculateResult() {
+      var result = document.getElementById("result").value;
+      var calculatedResult = eval(result);
+      document.getElementById("result").value = calculatedResult;
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2acccc;
+    }
+
+    .calculator {
+      width: 220px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #141313;
+      text-align: center;
+      background-color: #f7f7f7;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .calculator input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 20px;
+      border: none;
+      background-color: #eee;
+      border-radius: 4px;
+      text-align: right;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+    }
+
+    .buttons button {
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background-color: #fff;
+      color: #333;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #ddd;
+    }
+
+    .buttons button.operator {
+      background-color: #f7f7f7;
+      color: #777;
+    }
+
+    #zero {
+      grid-column: span 2;
+    }
+
+    #equals {
+      background-color: #2acccc;
+      color: #fff;
+    }
+
+    #equals:hover {
+      background-color: #1d9fa8;
+    }
+  </style>
+</body>
+</html>

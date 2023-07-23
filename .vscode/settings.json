@@ -1,4 +1,8 @@
 {
     "cmake.configureOnOpen": true,
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }

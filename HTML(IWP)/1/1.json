@@ -1,0 +1,22 @@
+{
+    "firstName": "Nancy",
+    "lastName": "Kumarl",
+    "address": [
+      {
+        "streetAddress": "VIT BHOPAL UNIVERSITY",
+        "city": "Bhopal",
+        "state": "MP",
+        "postalCode": 104427
+      },
+      {
+        "streetAddress": "VIT VELLORE",
+        "city": "Vellore",
+        "state": "TN",
+        "postalCode": 632014
+      }
+    ],
+    "mobileNumbers": [
+      "7911989989",
+      "6899899997"
+    ]
+  }

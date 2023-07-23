@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Choice Quiz</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			color: #333;
+			margin: 20px 0;
+			text-align: center;
+		}
+
+		form {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+			padding: 10px 20px;
+			transition: background-color 0.3s;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		.result {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.result p {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 0 0 10px;
+		}
+
+		form p {
+			color: #333;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		input[type="radio"] {
+			margin-left: 10px;
+		}
+
+		input[type="radio"]:checked + label {
+			background-color: #333;
+			border-color: #333;
+			color: #fff;
+		}
+
+		input[type="radio"]:not(:checked) + label {
+			background-color: #fff;
+			border-color: #ccc;
+			color: #333;
+		}
+
+		label {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 16px;
+			margin: 5px;
+			padding: 10px;
+			transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+		}
+
+		input[type="submit"] {
+			background-color: #f44336;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #e53935;
+		}
+	</style>
+</head>
+<body>
+	<h1>Multiple Choice Quiz</h1>
+
+	<form id="quiz-form">
+		<p>1. What is the capital of India?</p>
+		<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">a. London</label>
+		<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">b. Delhi</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">c. Berlin</label><br><br>
+
+		<p>2. Which of the following is not a primary color?</p>
+		<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">a. Red</label>
+		<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">b. Yellow</label>
+		<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">c. Blue</label>
+		<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">d. Green</label><br><br>
+
+		<p>3. What is the capital of Japan?</p>
+		<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">a. Beijing</label>
+		<input type= "radio" name="q3" value="b" id="q3b"><label for="q3b">b. Tokyo</label>
+		<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">c. Seoul</label><br><br>
+
+		<p>4. How many rings are on the Olympic flag?</p>
+		<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">a. 4</label>
+		<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">b. 5</label>
+		<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">c. 7</label><br><br>
+
+		<p>5. What is the largest planet in our solar system?</p>
+		<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">a. Mars</label>
+		<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">b. Venus</label>
+		<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">c. Jupiter</label><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<div id="result"></div>
+
+	<script>
+		var answers = ["b", "d", "b", "b", "c"];
+
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var score = 0;
+    var userAnswers = [document.querySelector('input[name="q1"]:checked').value,
+                       document.querySelector('input[name="q2"]:checked').value,
+                       document.querySelector('input[name="q3"]:checked').value,
+                       document.querySelector('input[name="q4"]:checked').value,
+                       document.querySelector('input[name="q5"]:checked').value];
+    for (var i = 0; i < userAnswers.length; i++) {
+        if (userAnswers[i] === answers[i]) {
+            score++;
+        }
+    }
+    var resultText = "";
+    if (score === 0) {
+        resultText = "Oops! You didn't get any of the questions right. Keep studying!";
+    } else if (score === 1 || score === 2) {
+        resultText = "You scored " + score + " out of 5. Better luck next time!";
+    } else if (score === 3 || score === 4) {
+        resultText = "Great job! You scored " + score + " out of 5.";
+    } else {
+        resultText = "Congratulations! You got all of the questions right!";
+    }
+    document.getElementById("result").innerHTML = "<p>" + resultText + "</p>";
+    document.getElementById("quiz-form").reset();
+});
+	</script>
+</body>
+</html>
